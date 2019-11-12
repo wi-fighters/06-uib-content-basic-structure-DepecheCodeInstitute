@@ -1,31 +1,50 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!-- this declarations tell the browser what version of html the page is written in. Notably, this is the valid declaration for HTML 5. Self-closing. (see w3schools). -->
 <html lang="en">
 <!-- this declaration defines what language the non-editable elements are written in, and also the language the user should use in the editable elements. Self-closing. (see MDN). -->
-    <head>
+
+<head>
     <!-- this element contains machine-readable metadata, that is, information that is not displayed in the browser, including things such as the overall page title, links to css stylesheets and specifying the document's character coding. It must be the first child element of the html parent element. (see MDN) -->
-        <meta charset="utf-8" />
-        <!-- this, uh, specifies the document's character coding -->
-        <meta name="author" content="DepecheCode">
-        <!-- this specifies the author of this page -->
-        <meta name="description" content="This website is just an exercise to pracice the basic html structure" />
-        <!-- this describes the document, something which can help make your page appear higher in relevant searches by search engines. (see MDN) -->
-        <title>Basic Structure Practice</title>
-        <!-- In contrast to headings, this title defines the name of the overall document. (see MDN) -->
-    </head>
+    <meta charset="utf-8" />
+    <!-- this, uh, specifies the document's character coding -->
+    <meta name="author" content="DepecheCode">
+    <!-- this specifies the author of this page -->
+    <meta name="description" content="This website is just an exercise to pracice the basic html structure" />
+    <!-- this describes the document, something which can help make your page appear higher in relevant searches by search engines. (see MDN) -->
+    <title>Basic Structure Practice</title>
+    <!-- In contrast to headings, this title defines the name of the overall document. (see MDN) -->
+</head>
 
-    <body>
-        <!-- this is where the content of the page is stored. It must be the second child element of the html parent element. There can only be one <body> element. (see MDN) -->
-        <h1 title="&lt;h1&gt;">This is the most important heading</h1>
-        <!-- html <h1> to <h6> six levels of section headings, from highest <h1> to lowest <h6>. Both starting and ending tags are mandatory. For the sake of accessibility, it is not advised to use these tags to change font-size or to skip progressive levels or to repeat use of the <h1> tag. (see MDN)-->
-            <p>Lorem, ipsum dolor.</p>
-            <!-- this element represents a paragraph, which in HTML can be not only blocks of text, but any grouping of related content including images or form fields (see MDN). -->
-        <h2 title="&lt;h2&gt;">This heading is a little less important</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, libero.</p>
-            <!-- note that lorem<integer> gives you lorem ipsum text of <integer> word length -->
+<body>
+    <!-- this is where the content of the page is stored. It must be the second child element of the html parent element. There can only be one <body> element. (see MDN) -->
+    <h1 title="&lt;h1&gt;">This is the most important heading</h1>
+    <!-- html <h1> to <h6> six levels of section headings, from highest <h1> to lowest <h6>. Both starting and ending tags are mandatory. For the sake of accessibility, it is not advised to use these tags to change font-size or to skip progressive levels or to repeat use of the <h1> tag. (see MDN)-->
+    <p>Lorem, ipsum dolor.</p>
+    <!-- this element represents a paragraph, which in HTML can be not only blocks of text, but any grouping of related content including images or form fields (see MDN). -->
+    <h2 title="&lt;h2&gt;">This heading is a little less important</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, libero.</p>
+    <!-- note that lorem<integer> gives you lorem ipsum text of <integer> word length -->
 
-        <h3 title="&lt;h3&gt;">This heading is even less important than the one above</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eum voluptatem repellat cumque aliquam quos sapiente? Sed repellat corporis at omnis iure architecto? Quod, illo.</p>
-    </body>
+    <h3 title="&lt;h3&gt;">This heading is even less important than the one above</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eum voluptatem repellat cumque aliquam quos
+        sapiente? Sed repellat corporis at omnis iure architecto? Quod, illo.</p>
+    <figure role="img" aria-labelledby="webup-caption">
+        <!-- figure and figcaption elements improve page accessibility (see MDN) -->
+        <pre>
+                    /**********************************
+                    *__        __   _     _   _       *
+                    *\ \      / /__| |__ | | | |_ __  *
+                    * \ \ /\ / / _ \ '_ \| | | | '_ \ *
+                    *  \ V  V /  __/ |_) | |_| | |_) |*
+                    *   \_/\_/ \___|_.__/ \___/| .__/ *
+                    *                          |_|    *
+                    ***********************************/
+            </pre>
+        <figcaption id="webup-caption">
+            WebUp logo illustrated using preformatted text characters.
+        </figcaption>
+    </figure>
+
+</body>
 
 </html>
